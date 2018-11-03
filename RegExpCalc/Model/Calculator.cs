@@ -16,7 +16,7 @@ namespace RegExpCalc
 
         #region RegExp patterns for solving equation
 
-        const string patFloatNumber = @"(-?\d+(?:\.\d+)?)(?:[eE][+\-]\d+)?";
+        const string patFloatNumber = @"(-?\d+(?:\.\d+)?)";
 
         readonly string _patOpDegree = @"(" + patFloatNumber + @"[\^]" + patFloatNumber + ")";
         readonly string _patOpMul =    @"(" + patFloatNumber + @"[*]" + patFloatNumber + ")";
